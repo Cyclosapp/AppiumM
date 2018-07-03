@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.testng.reporters.EmailableReporter2"/>
+  </listeners>
+  <test name="Cyclos Login(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.testcases.SprintOne">
+        <methods>
+          <include name="cyclosRegister" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.testcases.SprintOne -->
+    </classes>
+  </test> <!-- Cyclos Login(failed) -->
+</suite> <!-- Failed suite [Suite] -->
